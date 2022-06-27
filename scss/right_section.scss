@@ -1,0 +1,157 @@
+@use './variables.scss' as *;
+
+.right_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .trial_offer {
+        width: 540px;
+        height: 60px;
+        background-color: $violet;
+        color: $white;
+        box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+        border-radius: 10px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.267857px;
+
+            span {
+                font-weight: 700;
+            }
+        }               
+    }
+}
+
+fieldset {
+    width: 540px;
+    height: 474px;
+    background-color: $white;
+    padding: 40px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    border: none;
+
+    form {
+
+        .form_control {
+            position: relative;
+
+            & img {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                visibility: hidden;
+            }
+        
+            & small {
+                position: absolute;
+                top: 58px;
+                right: 0;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+                text-align: right;
+                color: $pink;
+                visibility: hidden;
+            }
+
+            input {
+                max-width: 460px;
+                height: 56px;
+                margin-bottom: 20px;
+                background: #FFFFFF;
+                border: 1px solid #DEDEDE;
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            input[type=text], input[type=password] {
+                padding-left: 32px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 0.25px;
+                color: $grey;     
+            }
+
+
+            input[type=text]:focus, input[type=password]:focus {
+                border: 1px solid $violet;
+                outline: 0;
+            }
+
+            ::placeholder {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 0.25px;
+                color: $grey;
+                mix-blend-mode: normal;
+                opacity: 0.75;
+            }
+        }
+        
+        .form_control.error {
+        
+            & input {
+                background: $white;
+                border: 1px solid $pink;
+            }
+
+            & img {
+                visibility: visible;
+            }
+
+            & small {
+                visibility: visible;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 26px;
+            text-align: center;
+            color: $grey_light;
+
+            span {
+                font-weight: 700;
+                color: $pink;
+            }
+        }
+            
+        #submit_button {
+            background-color: $green;
+            color: $white;
+            box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+            border-radius: 5px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: 1px;
+
+            width: 100%;
+            max-width: 460px;
+            height: 56px;
+            margin-bottom: 20px;
+
+            &:hover {
+                cursor: pointer;
+                background: $green_light;
+                box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+            }
+        }
+    }
+}

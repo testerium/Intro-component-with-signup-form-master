@@ -1,0 +1,70 @@
+@use './variables.scss' as *;
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    body {
+        background-image: url('../images/bg-intro-mobile.png');
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 767px;
+        width: 100%;
+        margin: auto auto;
+        }
+    
+    .left_section {
+        width:fit-content;
+        margin: 88px 0 64px 0;
+    
+        h1 {
+            font-size: 28px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: -0.291667px;
+            padding: 0 5px 16px 0;
+        }
+    
+        p {
+            text-align: center;
+            padding: 0 25px 64px 25px;
+        }
+    }  
+    
+    .right_section {
+        display: flex;
+        align-items: center;
+     
+        .trial_offer {
+            width: 327px;
+            height: 88px;
+            padding: 0 66px;
+        
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: 0.267857px;
+            }
+    }}
+    
+    
+    fieldset {
+        width: 327px;
+        margin-bottom: 68px;
+    
+    form {
+    
+        #submit_button {
+            width: 279px;
+            height: 56px;
+        }
+    
+        p {
+            line-height: 21px;
+            padding: 0 15px 24px 15px;
+            }}
+    }}

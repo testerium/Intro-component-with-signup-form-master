@@ -1,0 +1,37 @@
+@use './variables.scss' as *;
+@use './left_section.scss' as *;
+@use './right_section.scss' as *;
+@use './mobile.scss' as *;
+@use './tablet.scss' as *;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-image: url('../images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $pink;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    main {
+        display: flex;
+        justify-content: center;
+        max-width: 1440px;
+        width: 100%;
+        margin: auto auto;
+    }
+
+footer {
+    .attribution { 
+        font-size: 11px; text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}

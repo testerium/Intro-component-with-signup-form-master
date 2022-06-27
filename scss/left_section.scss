@@ -1,0 +1,22 @@
+@use './variables.scss' as *;
+
+.left_section {
+    width: 525px;
+    height: 220px;
+    color: $white;
+    margin: 290px 45px 290px 0;
+
+    h1 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: -0.520833px;
+        padding-bottom: 11px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
